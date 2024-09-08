@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "FF-RafleDraw",
-  description: "Flying Fish Rafle Draw",
+  title: "TolaRafleDraw",
+  description: "Tola Rafle Draw",
 };
 
 export default function RootLayout({
