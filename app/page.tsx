@@ -113,7 +113,7 @@ export default function Home() {
   };
 
   return (
-    <main className="bg-[url('/images/bg.jpg')] bg-cover bg-center min-h-screen flex flex-col items-center">
+    <main className="bg-[url('/images/bg.jpg')] md:bg-cover bg-center bg-contain space-y-20 min-h-screen p-8 flex flex-col items-center">
       <CountdownTimer
         key={timerKey}
         isRunning={isRunning}
@@ -124,14 +124,14 @@ export default function Home() {
       <Boxes numbers={numbers} winnerNumber={null} />
 
       {showName && (
-        <div className="border h-[101px] w-1/2 border-white mt-6 flex items-center justify-center">
-          <p className="font-bold text-5xl text-green-500 p2 text-center">
+        <div className="border md:h-[101px] w-fit p-4 bg-white border-white mt-6 flex items-center justify-center">
+          <p className="font-bold md:text-5xl text-3xl text-green-500 p-2 text-center">
             {currentName || "Shuffling..."}
           </p>
         </div>
       )}
 
-      <div className="flex space-x-44 mt-11">
+      <div className="flex md:space-x-44 space-x-10 mt-11">
         <Button label="START" bgColor="bg-[#F0D503]" onClick={handleStart} />
         <Button label="CLEAR" bgColor="bg-[#F16C70]" onClick={handleClear} />
       </div>

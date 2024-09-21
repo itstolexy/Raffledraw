@@ -10,7 +10,7 @@ interface CountdownTimerProps {
 const CountdownTimer: React.FC<CountdownTimerProps> = ({
   isRunning,
   onReset,
-  initialTime = 60,  // Updated to 60 seconds
+  initialTime = 60, // Updated to 60 seconds
   onComplete,
 }) => {
   const [time, setTime] = useState(initialTime);
@@ -49,14 +49,18 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({
     <div className="flex flex-col items-center justify-center">
       <div className="flex items-center mt-24">
         <div className="flex flex-col items-center mx-2">
-          <div className={`bg-white ${textColorClass} font-bold text-4xl flex items-center justify-center w-24 h-24 rounded-lg`}>
+          <div
+            className={`bg-white ${textColorClass} font-bold md:text-4xl text-3xl flex items-center justify-center md:w-24 w-fit p-4 md:h-24 rounded-lg`}
+          >
             {minutes}
           </div>
           <p className="text-white mt-2">Minutes</p>
         </div>
-        <span className="text-4xl -mt-10 mx-2 text-white">:</span>
+        <span className="md:text-4xl -mt-10 mx-2 text-white">:</span>
         <div className="flex flex-col items-center mx-2">
-          <div className={`bg-white ${textColorClass} font-bold text-4xl flex items-center justify-center w-24 h-24 rounded-lg`}>
+          <div
+            className={`bg-white ${textColorClass} font-bold md:text-4xl text-3xl flex items-center justify-center md:w-24 w-fit p-4 md:h-24 rounded-lg`}
+          >
             {seconds}
           </div>
           <p className="text-white mt-2">Seconds</p>
