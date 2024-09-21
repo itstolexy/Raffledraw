@@ -54,16 +54,16 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({
           >
             {minutes}
           </div>
-          <p className="text-white mt-2">Minutes</p>
+          <p className="text-[#F16C70] mt-2">Minutes</p>
         </div>
-        <span className="md:text-4xl -mt-10 mx-2 text-white">:</span>
+        <span className="md:text-4xl -mt-10 mx-2 text-[#F16C70]">:</span>
         <div className="flex flex-col items-center mx-2">
           <div
             className={`bg-white ${textColorClass} font-bold md:text-4xl text-3xl flex items-center justify-center md:w-24 w-fit p-4 md:h-24 rounded-lg`}
           >
             {seconds}
           </div>
-          <p className="text-white mt-2">Seconds</p>
+          <p className="text-[#F16C70] mt-2">Seconds</p>
         </div>
       </div>
     </div>
